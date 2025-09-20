@@ -15,11 +15,13 @@ const generatePerson = () => {
         lastName: faker.person.lastName(),
         email: faker.internet.email(),
         password: faker.internet.password(),
+
         dateOfBirth: {
             day: faker.date.birthdate().getDate(),
             month: faker.date.birthdate().getMonth(),
             year: faker.date.birthdate().getYear(),
         },
+
         company: faker.company.name(),
         address: {
             street: faker.location.streetAddress(),

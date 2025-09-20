@@ -9,11 +9,7 @@ describe("Carrinho de Compras", () => {
 
     const product = creator.randomProduct();
 
-    beforeEach(() => {
-        page.login.doLogin(SECRET_EMAIL, SECRET_PASSWORD);
-    });
-
-    afterEach(() => cy.screenshot({ overwrite: true }));
+    beforeEach(() => page.login.doLogin(SECRET_EMAIL, SECRET_PASSWORD));
 
     it("Realiza busca de um produto", () => {
         page.purchases.openPurchasesPage();

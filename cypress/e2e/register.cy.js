@@ -4,8 +4,6 @@ import creator from "../utils/dataGenerators";
 describe("Cadastração de Usuário", () => {
     let person = creator.generatePerson();
 
-    afterEach(() => cy.screenshot({ overwrite: true }));
-
     it("Cadastração com dados corretos", () => {
         page.register.openRegisterPage();
         page.register.fillData(person);

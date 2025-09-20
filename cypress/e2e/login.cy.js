@@ -6,8 +6,6 @@ describe("Autenticação de Usuário", () => {
         SECRET_PASSWORD
     } = Cypress.env();
 
-    afterEach(() => cy.screenshot({ overwrite: true }));
-
     it("Login com credenciais validas", () => {
         page.login.openLoginPage();
         page.login.fillCredents(SECRET_EMAIL, SECRET_PASSWORD);
