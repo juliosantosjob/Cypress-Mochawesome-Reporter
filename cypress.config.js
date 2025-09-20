@@ -6,7 +6,6 @@ const { setupEnv } = require("./cypress/utils/enviroments");
 module.exports = defineConfig({
     reporter: "cypress-mochawesome-reporter",
     reporterOptions: {
-        reportDir: "cypress/reports",
         reportPageTitle: "Relatório de Testes",
         embeddedScreenshots: true
     },
